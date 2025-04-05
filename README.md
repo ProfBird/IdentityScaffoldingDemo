@@ -2,7 +2,7 @@
 This ASP.NET 8.0 MVC web site was created in Visual Studio 2022.
 The following steps were taken to create a base web site.
 
-1. Created a new project with identity included.
+1. Created a new project with identity included (Authentication with Individual Accounts).
 2. Added a model named AppUser that inherits from IdentityUser.
 3. Added scaffolding for some of the identity Pages.
 4. Added seed data for an admin user.
