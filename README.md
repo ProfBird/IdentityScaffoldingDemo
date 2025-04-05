@@ -9,5 +9,5 @@ The following customizations were done to the stock VS project:
 5. Changed the database to MySQL.
 
 Here's a link to a screen-cast showing the whole process:  
-[Video recording on Google Drive[(https://drive.google.com/file/d/1Cb-Bli0FkrnRkIpaXX5dLWnf7giKxRIv/view?usp=sharing)
+[Video recording on Google Drive](https://drive.google.com/file/d/1Cb-Bli0FkrnRkIpaXX5dLWnf7giKxRIv/view?usp=sharing)
 
