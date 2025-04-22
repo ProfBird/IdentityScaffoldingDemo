@@ -11,3 +11,7 @@ The following steps were taken to create a base web site.
 Here's a link to a screen-cast showing the whole process:  
 [Video recording on Google Drive](https://drive.google.com/file/d/1Cb-Bli0FkrnRkIpaXX5dLWnf7giKxRIv/view?usp=sharing)
 
+After the screen-cast, more changes were made to improve security:
+1. Admin seed credentials were removed from the SeeAdmin class and put in appsettings.json.
+2. All appsettings files were removed from git tracking and replaced with appsettins.Example files which do not contain database credentials.
+
