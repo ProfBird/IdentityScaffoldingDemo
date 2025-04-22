@@ -50,7 +50,6 @@ using (var scope = app.Services.CreateScope())
     {
         await SeedAdmin.CreateUserAsync(scope.ServiceProvider, email, password);
     }
-    // var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
 }
 
 app.Run();
