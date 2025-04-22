@@ -44,6 +44,15 @@ app.MapRazorPages();
 
 using (var scope = app.Services.CreateScope())
 {
+    var adminUserName = builder.Configuration.GetSection("AdminCredentials")["UserName"];
+    var adminPassword = builder.Configuration.GetSection("AdminCredentials")["Password"];
+    await SeedData.SeedAdminUserAsync(scope.ServiceProvider, adminUserName, adminPassword);
+    var dbContext = scope.ServiceProvider.GetRequiredService<AppDBContext>();
+    await SeedData.SeedTestCaseStudiesAsync(dbContext, scope.ServiceProvider);
+}
+
+using (var scope = app.Services.CreateScope())
+{
     await SeedAdmin.CreateUser(scope.ServiceProvider);
     var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
 }
